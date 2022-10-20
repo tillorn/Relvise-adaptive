@@ -15,7 +15,9 @@ body {
 
 .container {
   max-width: 1046px;
+  padding: 0 15px;
   margin: 0px auto;
+  box-sizing: content-box;
 }
 /* --------HEADER----------------------------------------------- */
 .header {
@@ -32,6 +34,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 479px) {
+  .header_container {
+    max-height: 120px;
+  }
+}
+
 .header_logo {
   font-size: 24;
   font-weight: 700;
@@ -41,16 +49,36 @@ body {
 
 .header_menu {
   margin: 0 0 0 133px;
+  padding: 5px 0;
+}
+
+@media (max-width: 992px) {
+  .header_menu {
+    margin: 0 0 0 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_menu {
+    margin: 0 0 0 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header_menu {
+    margin: 0 0 0 20px;
+  }
 }
 
 .menu_list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu_item {
 }
 
-.menu_item:not(last-child) {
+.menu_item:not(:last-child) {
   margin-right: 21px;
 }
 
@@ -59,4 +87,10 @@ body {
   font-size: 14px;
   line-height: 171%;
   color: #737373;
+}
+
+@media (max-width: 479px) {
+  .menu_link {
+    font-size: 18px;
+  }
 }
