@@ -1,3 +1,16 @@
+:root {
+  --primary-text-color: #252b42;
+  --secondary-text-color: #737373;
+  --secondary-dark-text-color: #5d5d5d;
+  --light-text-color: #ffffff;
+  --primary-button-color: #ff7b47;
+  --secondary-color-1: #0d5c63;
+  --secondary-color-2: #17213c;
+  --dark-background-color: #252b42;
+  --light-background-color: #ffffff;
+  --hover-color: #2a7cc7;
+}
+
 html,
 body {
   height: 100%;
@@ -5,7 +18,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #252b42;
+  color: var(--primary-text-color);
 }
 
 .wrapper {
@@ -106,13 +119,13 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 171%;
-  color: #737373;
+  color: var(--secondary-text-color);
 }
 
 @media (max-width: 479px) {
   .menu_link {
     font-size: 18px;
-    color: #5d5d5d;
+    color: var(--secondary-dark-text-color);
   }
 }
 
@@ -156,12 +169,12 @@ body {
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.2px;
-  color: #737373;
+  color: var(--secondary-text-color);
 }
 
 @media (max-width: 479px) {
   .main-block-text {
-    color: #5d5d5d;
+    color: var(--secondary-dark-text-color);
   }
 }
 .main-block-buttons {
@@ -198,13 +211,13 @@ body {
 }
 
 .main-block-button-primary {
-  background: #ff7b47;
-  color: #fff;
+  background: var(--primary-button-color);
+  color: var(--light-text-color);
 }
 
 .main-block-button-secondary {
-  border: 1px solid #0d5c63;
-  color: #0d5c63;
+  border: 1px solid var(--secondary-color-1);
+  color: var(--secondary-color-1);
 }
 
 .main-block-image {
