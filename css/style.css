@@ -6,8 +6,9 @@
   --primary-button-color: #ff7b47;
   --secondary-color-1: #0d5c63;
   --secondary-color-2: #17213c;
-  --dark-background-color: #252b42;
   --light-background-color: #ffffff;
+  --grey-background-color: #fafafa;
+  --dark-background-color: #252b42;
   --hover-color: #2a7cc7;
 }
 
@@ -26,6 +27,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: var(--grey-background-color);
 }
 
 .container {
@@ -50,6 +52,14 @@ body {
 
 .hidden {
   font-size: 0px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: var(--secondary-text-color);
 }
 
 /* --------HEADER----------------------------------------------- */
@@ -239,6 +249,77 @@ body {
     opacity: 0.5;
   }
 }
+
+/* ------------Services---------------- */
+.main-services {
+  position: relative;
+  z-index: 2;
+  margin: -111px 0 0 0;
+}
+
+@media (min-width: 670px) {
+  .services-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+  }
+}
+
+.services-column {
+  padding: 0 15px;
+  flex: 0 1 33.333%;
+  margin: 0 0 30px 0;
+}
+
+@media (min-width: 670px) {
+  .services-column {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-column {
+    flex: 0 1 50%;
+  }
+  .services-column:last-child {
+    flex: 1 1 100%;
+  }
+}
+
+.services-item {
+  height: 100%;
+  padding: 35px;
+  background-color: var(--light-background-color);
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.services-item > *:not(:last-child) {
+  padding: 0 0 10px 0;
+}
+
+.services-item:hover {
+  background: var(--secondary-color-1);
+  color: var(--light-text-color);
+}
+
+.services-item:hover > .services-item-icon > .svg-icon {
+  fill: var(--light-text-color);
+}
+
+.services-item:hover > .services-item-title,
+.services-item:hover > .services-item-text {
+  color: var(--light-text-color);
+}
+
+.services-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: var(--primary-text-color);
+}
+
+/* ------------Advantages---------------- */
 
 /* --------FOOTER----------------------------------------------- */
 .footer {
