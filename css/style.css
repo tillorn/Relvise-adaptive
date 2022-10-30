@@ -701,6 +701,39 @@ p {
   color: var(--secondary-text-color);
 }
 
+/* --------------CLIENTS------------------ */
+
+.main-clients {
+}
+.clients-container {
+}
+
+.clients-body {
+  padding: 40px 15px;
+}
+
+@media (min-width: 767px) {
+  .clients-body {
+    padding: 20px 15px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.client-item {
+  flex: 0 1 16.667%;
+  text-align: center;
+  padding: 10px 0;
+  min-width: 130px;
+}
+.client-img {
+  max-width: 100%;
+}
+
 /* --------FOOTER----------------------------------------------- */
 .footer {
 }
