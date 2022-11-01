@@ -62,6 +62,7 @@ p {
   color: var(--secondary-text-color);
 }
 
+
 /* ---------------------HEADERS Block------------------ */
 .header-block {
   text-align: center;
@@ -98,6 +99,12 @@ p {
   line-height: 143%;
   letter-spacing: 0.2px;
   color: var(--secondary-text-color);
+}
+
+.main-block-btn-primary:hover,
+.subscribe-btn:hover,
+.contact-btn:hover {
+  background: var(--secondary-color-1);
 }
 
 /* --------HEADER----------------------------------------------- */
@@ -170,6 +177,10 @@ p {
   color: var(--secondary-text-color);
 }
 
+.active {
+  border-bottom: solid 1px var(--secondary-text-color);
+}
+
 @media (max-width: 479px) {
   .menu_link {
     font-size: 18px;
@@ -231,7 +242,7 @@ p {
   margin: -10px 0;
 }
 
-.main-block-button {
+.main-block-btn {
   border-radius: 37px;
   display: flex;
   min-height: 48px;
@@ -247,25 +258,33 @@ p {
 }
 
 @media (max-width: 479px) {
-  .main-block-button {
+  .main-block-btn {
     flex: 1 1 100%;
   }
 }
 
 @media (min-width: 479px) {
-  .main-block-button:not(:last-child) {
+  .main-block-btn:not(:last-child) {
     margin-right: 10px;
   }
 }
 
-.main-block-button-primary {
+.main-block-btn-primary {
   background: var(--primary-button-color);
   color: var(--light-text-color);
+  transition: background-color 0.6S ease 0s;
 }
 
-.main-block-button-secondary {
+.main-block-btn-secondary {
   border: 1px solid var(--secondary-color-1);
   color: var(--secondary-color-1);
+  transition: background-color 0.6S ease 0s;
+  transition: color 0.3S ease 0s;
+}
+
+.main-block-btn-secondary:hover {
+  background: var(--primary-button-color);
+  color: var(--light-text-color);
 }
 
 .main-block-image {
@@ -329,6 +348,7 @@ p {
   padding: 35px;
   background-color: var(--light-background-color);
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  transition: background-color 0.6S ease 0s;
 }
 
 .services-item > *:not(:last-child) {
@@ -856,6 +876,7 @@ p {
   min-height: 58px;
   padding: 0px 22px;
   background: var(--primary-button-color);
+  transition: background-color 0.6S ease 0s;
   border: 1px solid #E6E6E6;
   border-radius: 0px 5px 5px 0px;
   font-weight: 400;
@@ -865,6 +886,10 @@ p {
   justify-content: center;
   letter-spacing: 0.2px;
   color: var(--light-text-color);
+}
+
+.subscribe-btn:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -882,7 +907,7 @@ p {
 /* --------------GET IN TOUCH------------------ */
 
 .getintouch-container {
-  padding: 80px 15px;
+  padding: 80px 15px 148px 15px;
 }
 
 .getintouch-header {
@@ -1020,6 +1045,60 @@ letter-spacing: 0.1px;
     transition: all 1.5s;
   }
 }
+
+/* --------------CONTACT US------------------ */
+
+.main-contact {
+  background: var(--light-background-color);
+}
+.contact-container {
+}
+
+.contact-body {
+  padding: 40px 2px;
+}
+
+.contact-content {
+  padding: 0 0 20px 0;
+}
+.contact-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+.contact-title:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contact-text {
+}
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 15px 40px;
+  background: var(--primary-button-color);
+  transition: background-color 0.6S ease 0s;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  color: var(--light-text-color);
+}
+
+@media (min-width: 767px) {
+  .contact-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-content {
+    padding: 0 20px 0 0;
+  }
+}
+
 
 /* --------FOOTER----------------------------------------------- */
 .footer {
