@@ -80,7 +80,7 @@ p {
   padding: 0 0 10px 0;
 }
 
-@media (max-width: 762px) {
+@media (max-width: 767px) {
   .header-block-title {
     font-size: 35px;
   }
@@ -206,7 +206,7 @@ p {
   letter-spacing: 0.2px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 479px) {
   .main-block-title {
     font-size: 42px;
   }
@@ -583,7 +583,7 @@ p {
 }
 
 .whoweare-container {
-  padding: 100px 0 136px 0;
+  padding: 100px 15px 136px 15px;
 }
 
 @media (max-width: 950px) {
@@ -876,6 +876,148 @@ p {
 @media (max-width: 480px) {
   .subscribe-btn {
     min-height: 40px;
+  }
+}
+
+/* --------------GET IN TOUCH------------------ */
+
+.getintouch-container {
+  padding: 80px 15px;
+}
+
+.getintouch-header {
+  margin-bottom: 80px;
+}
+
+.getintouch-body {
+  
+  padding: 0 15px;
+}
+
+.getintouch-column {
+  flex: 0 1 33.3333%;
+ flex-wrap: wrap;
+}
+
+.getintouch-column:hover > *,
+.getintouch-item:hover > * > * > * {
+  background-color: var(--dark-background-color);  
+  color: var(--light-text-color);
+}
+
+.getintouch-column:hover > .getintouch-item > .getintouch-item-icon > .getintouch-svg {
+  fill: var(--light-text-color);
+}
+
+.getintouch-column:hover > .getintouch-item > .getintouch-item-contacts >.getintouch-item-contact {
+  color: var(--light-text-color);
+}
+
+.getintouch-column:hover > .getintouch-item > .getintouch-item-contacts >.getintouch-item-contact {
+  color: var(--light-text-color);
+}
+
+.getintouch-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 33.3333%;
+  padding: 50px 15px;
+  text-align: center;
+  background: var(--light-background-color);
+}
+
+.getintouch-item:hover {
+  margin: -30px 0px -30px 0px;
+  padding: 80px 40px;
+  transition: all 1.5s;
+}
+
+.getintouch-item-icon {
+  text-align: center;
+}
+
+.getintouch-item-contacts {
+  padding: 15px 10px;
+}
+.getintouch-item-contact {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--primary-text-color);
+}
+
+.getintouch-item-contact.getintouch-item-contact.getintouch-item-contact.getintouch-item-contact:hover {
+  color: var(--primary-button-color);
+}
+
+.getintouch-item-title {
+  font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+letter-spacing: 0.1px;
+}
+
+.getintouch-item-title:not(:last-child) {
+  padding: 0 0 15px 0;
+}
+.getintouch-item-btn {
+  min-height: 44px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-button-color);
+  border-radius: 5px;  
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+  color: var(--primary-button-color);
+}
+
+.getintouch-item-btn:hover {
+  background-color: var(--primary-button-color);
+}
+
+.getintouch-column:hover > .getintouch-item > .getintouch-item-btn {
+  border: 1px solid var(--light-text-color); 
+  color: var(--light-text-color);
+}
+
+@media (min-width: 992px) {
+  .getintouch-body {
+    display: flex;
+    align-items: center;
+  }
+  .getintouch-column:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 992px) {
+  .getintouch-container {
+    padding: 50px 15px;
+  }
+  
+  .getintouch-header {
+    margin-bottom: 40px;
+  }
+
+  .getintouch-column {
+    margin-bottom: 30px;
+  }
+
+  .getintouch-item{
+    padding: 20px 15px;
+  }
+
+  .getintouch-item:hover {
+    margin: -30px 0px -30px 0px;
+    padding: 50px 15px;
+    transition: all 1.5s;
   }
 }
 
